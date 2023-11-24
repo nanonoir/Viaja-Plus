@@ -33,14 +33,14 @@
 <body>
 
     <header>
-        <a class="logo" href="index.html">
+        <a class="logo" href="index.php">
             <img src="img/logo.png" width="150px" alt="">
         </a>
         
 
         <div class="botones">
             <b id="sobre-nosotros">Sobre Nosotros</b>
-            <a class="button1" href="contacto.html">Contacto</a>
+            <a class="button1" href="contacto.php">Contacto</a>
         </div>
 
     </header>
@@ -107,13 +107,13 @@
         <label class="label" for="message">Ingresa aqui cualquier detalle relevante acerca de tu viaje</label>
         <textarea class="input2" id="message" name="visitor_message" placeholder="Escribe la información aqui." required></textarea>
         </div> -->
-        <a class = "submit" type="submit" href = "busqueda.html">Buscar Opciones</a>
+        <a class = "submit" type="submit" href = "busqueda.php">Buscar Opciones</a>
     </form>
 </body>
 
     <script>
         document.getElementById('sobre-nosotros').addEventListener('click', function() {
-            window.location.href = 'about.html';
+            window.location.href = 'about.php';
         });
     </script>
 

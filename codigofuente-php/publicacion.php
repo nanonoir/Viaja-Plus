@@ -39,7 +39,7 @@
     </div>
     <header>
         <div class="logo">
-            <a href="index.html" class="logo">
+            <a class="logo" href="index.php">
                 <img src="img/logo.png" width="150px" alt = "">
             </a>
         </div>
@@ -47,7 +47,7 @@
 
         <div class="botones">
             <b id="sobre-nosotros">Sobre Nosotros</b>
-            <a class="button1" href="contacto.html">Contacto</a>
+            <a class="button1" href="contacto.php">Contacto</a>
         </div>
 
     </header>
@@ -207,7 +207,7 @@
 
 <script>
     document.getElementById('sobre-nosotros').addEventListener('click', function() {
-        window.location.href = 'about.html';
+        window.location.href = 'about.php';
     });
 </script>
 

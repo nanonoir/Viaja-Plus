@@ -36,12 +36,12 @@
     </div>
 
     <header>
-        <a class="logo" href="index.html">
+        <a class="logo" href="index.php">
             <img src="img/logo.png" width="150px" alt="">
         </a>
         <div class="botones">
             <b id="sobre-nosotros">Sobre Nosotros</b>
-            <a class="button1" href="contacto.html">Contacto</a>
+            <a class="button1" href="contacto.php">Contacto</a>
         </div>
     </header>
 
@@ -50,7 +50,7 @@
 
             <div class="contenedor-puestos">
                 <div class="card">
-                    <a href="publicacion.html" class="card__content">
+                    <a href="publicacion.php" class="card__content">
                         <h3 class="card__title">Corrientes (Capital) a Resistencia, Chaco</h3>
                         <p class="card__description">Viaje Directo de Corrientes Capital hacia Chaco en la localidad de Resistencia</p>
                         <div class="card__ubication">Unidad de Transporte: FlechaBus</div>
@@ -62,7 +62,7 @@
                     </a>    
                 </div>
                 <div class="card">
-                    <a href="publicacion.html" class="card__content">
+                    <a href="publicacion.php" class="card__content">
                         <h3 class="card__title">Corrientes (Capital) a Resistencia, Chaco</h3>
                         <p class="card__description">Viaje Directo de Corrientes Capital hacia Chaco en la localidad de Resistencia</p>
                         <div class="card__ubication">Unidad de Transporte: El Rapido</div>
@@ -74,7 +74,7 @@
                     </a>    
                 </div>
                 <div class="card">
-                    <a href="publicacion.html" class="card__content">
+                    <a href="publicacion.php" class="card__content">
                         <h3 class="card__title">Corrientes (Capital) a Resistencia, Chaco</h3>
                         <p class="card__description">Viaje Directo de Corrientes Capital hacia Chaco en la localidad de Resistencia</p>
                         <div class="card__ubication">Unidad de Transporte: Brown</div>
@@ -86,7 +86,7 @@
                     </a>    
                 </div>
                 <div class="card">
-                    <a href="publicacion.html" class="card__content">
+                    <a href="publicacion.php" class="card__content">
                         <h3 class="card__title">Corrientes (Capital) a Resistencia, Chaco</h3>
                         <p class="card__description">Viaje Directo de Corrientes Capital hacia Chaco en la localidad de Resistencia</p>
                         <div class="card__ubication">Unidad de Transporte: Chevallier</div>
@@ -118,7 +118,7 @@
 
 <script>
     document.getElementById('sobre-nosotros').addEventListener('click', function() {
-        window.location.href = 'about.html';
+        window.location.href = 'about.php';
     });
 </script>
 

@@ -33,14 +33,14 @@
 <body>
 
     <header>
-        <a class="logo" href="index.html">
+        <a class="logo" href="index.php">
             <img src="img/logo.png" width="150px" alt="">
         </a>
         
 
         <div class="botones">
             <b id="sobre-nosotros">Sobre Nosotros</b>
-            <a class="button1" href="contacto.html">Contacto</a>
+            <a class="button1" href="contacto.php">Contacto</a>
         </div>
 
     </header>
@@ -50,7 +50,7 @@
             <h1>Realiza el viaje que tanto querias, obtene tu pasaje de manera facil y rapida
             </h1>
             <p>¡Bienvenido a ViajaPlus, tu portal de confianza para la compra y venta de pasajes de viajes en Omnibus! Estamos emocionados de tenerte aquí, donde tu próxima aventura comienza. En nuestro sitio, encontrarás una amplia variedad de opciones de viaje que se adaptan a tus necesidades y preferencias.</p>
-            <a class="button2" href="pasaje.html">Consegui tu Pasaje!</a>
+            <a class="button2" href="pasaje.php">Consegui tu Pasaje!</a>
         </div>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <img src="img/omnibus-rojo.png" class="img1" alt="">
@@ -59,7 +59,7 @@
 
 <script>
     document.getElementById('sobre-nosotros').addEventListener('click', function() {
-        window.location.href = 'about.html';
+        window.location.href = 'about.php';
     });
 </script>
 

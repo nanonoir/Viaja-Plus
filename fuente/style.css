@@ -397,7 +397,7 @@ background-color:#fff;
 .title {
   display: flex; /* Activa el modelo de caja flexible */
   align-items: center; /* Centra verticalmente el contenido */
-  margin-left: 29%;
+  margin-left: 5%;
   font-size: 60px;
   color: rgba(39, 37, 37, 0.9);
   font-weight: 600;
@@ -872,6 +872,7 @@ font-size: 25px;
 }
 
 .grid-container {
+  margin-left: 5%;
 margin-top: 5%;
 display: flex;
 grid-template-areas: 
@@ -938,11 +939,25 @@ gap: 20px;
 align-content: flex-start;
 margin-bottom: 50px;
 }
+
+.contenedor-puestos1 {
+  width: 1200px;
+  flex-wrap: wrap;
+  grid-area: puestos;
+  display: flex;
+  gap: 20px;
+  align-content: flex-start;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  }
+
+
 .card {
 grid-area: puestos;
 --border-radius: 0.75rem;
---primary-color: #7257fa;
---secondary-color: #3c3852;
+--primary-color: #ff0000;
+--secondary-color: #222222;
 width: 530px;
 height: fit-content;
 font-family: "Arial";
@@ -970,6 +985,7 @@ color: var(--secondary-color);
 }
 
 .card__title {
+color: #e57b7b;
 padding: 0;
 font-weight: bold;
 font-size: 25px;
@@ -978,6 +994,11 @@ font-size: 25px;
 .card__date {
 color: #6e6b80;
 }
+
+.card__ubication {
+  color: #222222;
+  }
+
 .card .card__description .card__title {
 color: var(--secondary-color);
 word-wrap: break-word; /* Permite el salto de línea automático */
@@ -1007,7 +1028,7 @@ color: var(--primary-color);
 }
 
 .card:hover .card__arrow {
-background: #91109c;
+background: #e57b7b;
 }
 
 .card:hover .card__arrow svg {
@@ -1058,7 +1079,7 @@ justify-content: center;
 }
 
 .page-btn {
-background: #d654b6;
+background: #ff0000;
 color: #fff;
 border: none;
 border-radius: 5px;
@@ -1705,9 +1726,134 @@ margin-top: 25%;
 }
 
 .botones b{
-	color: red;
+    cursor: pointer;
+	  color: red;
     text-decoration: none; /* Elimina el subrayado de los botones */
 }
 
-    
+#ventanaEmergente {
+  width: 500px;
+  height: 300px;
+  color: gray;
+  background-color: #ffffff;
+  font-size: 23px;
+  padding: 25px;
+  border-radius: 25px;
+  height: fit-content;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: 1000;
+  max-width: 80%; /* Ajusta según sea necesario */
+  max-height: 80%; /* Ajusta según sea necesario */
+  overflow: auto;
+}
+
+.formvent {
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  justify-content: center;
+  display: grid;
+  gap: 10px;
+  max-width: 1250px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+#ventanaConfirmacion {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.input__container {
+  grid-area: filtros;
+  margin: 20px;
+  grid-area: filtros;
+  --border-radius: 0.75rem;
+  --primary-color: #7257fa;
+  --secondary-color: #3c3852;
+  max-width: 400px;
+  height: fit-content;
+  font-family: "Arial";
+  padding: 15px;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  background: #ffffff;
+  box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+  position: relative;
+  display: flex;
+  float: right;
+}
+
+.input__search {
+  width: 90%;
+  height: 50px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  padding: 8px;
+  position: relative;
+  font-size: 25px;
+}
+
+.label {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 30px;
+  justify-content: center;
+  margin-right: 60px;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-weight: 400;
+}
+
+.input{
+  color: rgba(88, 87, 87, 0.822);
+  border-radius: 10px;
+  font-size: 24px;
+  justify-content: center;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-weight: 300;
+  outline: none;
+  width: 300px;
+}
+
+.input__button__shadow {
+  cursor: pointer;
+  border: 2px color(#000);
+  background: none;
+  transition: transform 400ms, background 400ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 5px;
+  float: right;
+}
+
+div.elem-group {
+  width: 300px;
+  margin: 30px 0px;
+  margin-right: 50px;
+}
+
+.enlace-negrita {
+  font-weight: bold; /* Para mantener el texto en negrita */
+  text-decoration: none; /* Para agregar un subrayado, que es común en enlaces */
+  cursor: pointer; /* Cambia el cursor al estilo de un enlace al pasar sobre él */
+}
 /* Final */
